@@ -16,7 +16,7 @@ export class ReservationsController {
   // TODO 2: Implement PATCH /api/reservations/:id/cancel with ParseIntPipe and no body.
   @Patch(':id/reservation')
   reservqations(@Param('id', ParseIntPipe) id: number) {
-    return 
+    return this.reservationsService.cancel
   }
 
   // The endpoints below are completed. Do not change them.
